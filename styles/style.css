@@ -1,0 +1,272 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+a, p, h1, h2, h3{
+    color:rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header-container{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-item{
+    width: 100%;
+}
+
+.header-title{
+    font-weight: bolder;
+}
+
+.header-navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.header-link{
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    margin: 0;
+}
+
+/* BANNER */
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.banner-description{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.banner-image{
+    align-self: center;
+    width: 80%;
+    display: block;
+    max-width: 350px;
+}
+
+/* PORTFOLIO  */
+
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+.portfolio-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio-item-image{
+    width: 80%;
+    display: block;
+    max-width: 350px;
+}
+
+.portfolio-item > p{
+    margin: 0;
+    padding: 15px;
+}
+
+/* CONTACT */
+
+.contact-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f7f7f7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-item{
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-text{
+   margin: 20px;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+.contact-item-text, .contact-item-title{
+    margin: 0;
+    padding: 5px;
+}
+
+/* FOOTER NAVIGATION */
+
+.footer-container{
+    border-top: 1px solid rgba(0, 0, 0, 0.11);
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item{
+    width: 40%
+}
+
+.footer-title{
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-right: 15px;
+}
+
+.footer-link{
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.footer-back-to-top{
+    display: block;
+}
+
+/* RESPONSIVENESS */
+
+@media (min-width: 640px) {
+    .header-navigation{
+        flex-direction: row;
+    }
+
+    .header-link{
+        background-color: inherit;
+    }
+
+    .banner-container{
+        flex-direction: row;
+    }
+    
+    .banner-description{
+        align-self: center;
+        text-align: start;
+    }
+    
+    .banner-image{
+        order: 1;
+    }
+
+    .portfolio-items{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item{
+        width: 50%;
+    }
+
+    .contact-text{
+        padding-left: 15%;
+        padding-right: 15%;
+     }
+
+     .footer-container{
+        padding: 10px 3% 10px 3%;
+     }
+
+     .footer-link{
+        display: block;
+     }
+
+     .footer-back-to-top{
+        display: none;
+     }
+}
+
+@media (min-width: 920px){
+    .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-title{
+        text-align: start;
+        width: 40%;
+        padding-left: 80px;
+    }
+    
+    .header-navigation{
+        width: 30%;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-link{
+        align-self: center;
+    }
+
+    .banner-container{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .portfolio-items{
+        justify-content: space-around;
+    }
+
+    .portfolio-item{
+        width: 30%;
+    }
+
+    .contact-text{
+        padding-left: 20%;
+        padding-right: 20%;
+     }
+
+     .footer-container{
+        padding-left: 6%;
+        padding-right: 6%;
+     }
+}
